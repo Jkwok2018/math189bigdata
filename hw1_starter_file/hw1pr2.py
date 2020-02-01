@@ -54,15 +54,15 @@ if __name__ == '__main__':
 	plt.plot(X, y, 'ro')
 
 
-	# TODO: replace the m_opt and b_opt with the solution you obtained from
-	# 		part (a), note that y = mx + b
+	# replace the m_opt and b_opt with the solution you obtained from
+	# part (a), note that y = mx + b
 	"*** YOUR CODE HERE ***"
 	m_opt = 62.0/35
 	b_opt = 18.0/35
 	"*** END YOUR CODE HERE ***"
 
 
-	# TODO: generate 100 points along the line of optimal linear fit.
+	# generate 100 points along the line of optimal linear fit.
 
 	# HINT:
 	#	1) Use np.linspace to get the x-coordinate of 100 points
@@ -89,7 +89,7 @@ if __name__ == '__main__':
 	# variables to start with
 	mu, sigma, sampleSize = 0, 1, 100
 
-	# TODO: Generate white Gaussian noise
+	# Generate white Gaussian noise
 	# HINT: Use np.random.normal to generate noise
 
 	noise = []
@@ -97,7 +97,7 @@ if __name__ == '__main__':
 	noise = np.random.normal(mu, sigma, sampleSize).reshape(-1,1)
 	"*** END YOUR CODE HERE ***"
 
-	# TODO: generate y-coordinate of the 100 points with noise
+	# generate y-coordinate of the 100 points with noise
 
 	# HINT:
 	#	1) Use X_space created in the part (c) above as the x-coordinates
@@ -109,7 +109,7 @@ if __name__ == '__main__':
 	"*** END YOUR CODE HERE ***"
 
 
-	# TODO: calculate the new parameters for optimal linear fit using the
+	# calculate the new parameters for optimal linear fit using the
 	#		100 new points generated above
 
 	# HINT:
@@ -133,7 +133,7 @@ if __name__ == '__main__':
 	print(b_rand_opt)
 	print(m_rand_opt)
 
-	# TODO: Generate the y-coordinate of 100 points with the new parameters
+	# Generate the y-coordinate of 100 points with the new parameters
 	#		obtained
 
 	# HINT:
